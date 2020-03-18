@@ -1,5 +1,5 @@
 $themeBlue: rgba(87, 86, 179, 1);
-$themeBlueTransparent: rgba(87, 86, 179, 0);
+$themeBlueTransparent: transparent;
 
 @mixin generalButton {
     text-transform: lowercase;
@@ -8,9 +8,6 @@ $themeBlueTransparent: rgba(87, 86, 179, 0);
 
 .default {
     @include generalButton();
-    background: $themeBlue;
-    color: white;
-    border: 2px solid $themeBlue;
     padding: 20px;
     border-radius: 50px;
 }

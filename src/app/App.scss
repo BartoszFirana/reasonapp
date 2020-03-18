@@ -11,3 +11,9 @@ body {
 *::after {
     box-sizing: border-box;
 }
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
