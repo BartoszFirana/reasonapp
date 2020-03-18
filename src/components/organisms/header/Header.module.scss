@@ -1,0 +1,19 @@
+$themeBlue: rgba(87, 86, 179, 1);
+
+@mixin generalHeader {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px;
+}
+
+.header__bright {
+    @include generalHeader();
+    background: #fbfbfb;
+}
+
+.header__dark {
+    @include generalHeader();
+    background: $themeBlue;
+}
