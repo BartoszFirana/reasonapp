@@ -1,0 +1,16 @@
+$themeWhite: rgb(236, 236, 236);
+$themeBlue: rgba(87, 86, 179, 1);
+
+@mixin generalLogo {
+    font-weight: bold;
+    margin: 0;
+}
+
+.logo__dark {
+    @include generalLogo();
+    color: $themeBlue;
+}
+.logo__bright {
+    @include generalLogo();
+    color: $themeWhite;
+}

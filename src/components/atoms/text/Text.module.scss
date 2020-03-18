@@ -1,0 +1,15 @@
+@mixin generalText {
+    margin: 0;
+}
+
+.h1 {
+    @include generalText();
+}
+
+.h3 {
+    @include generalText();
+}
+
+.paragraph {
+    @include generalText();
+}

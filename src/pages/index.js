@@ -2,12 +2,15 @@ import React from 'react';
 import routes from 'Routes';
 import HomePage from 'pages/HomePage/HomePage';
 import CategoryPage from 'pages/CategoryPage/CategoryPage';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 const Pages = () => {
     return (
         <>
             <Switch>
+                <Route exact path="/">
+                    <Redirect to={routes.home} />
+                </Route>
                 <Route exact path={routes.home}>
                     {HomePage}
                 </Route>
